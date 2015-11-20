@@ -9,12 +9,7 @@ dl, dd, ol, ul, figure {
 }
 
 .avatar{
-    display: block;
-    width: 140px;
-    height:140px;
-    border-radius: 50%;
-    border: 1px solid #eee;
-    padding: 5px;
+    border:1px solid #eee;
     background:#fff;
 }
 
@@ -26,6 +21,10 @@ dl, dd, ol, ul, figure {
     border-radius:50%;
 }
 
+.sider-box{
+    border: 1px solid #eee;
+    background: #ffffff;
+}
 /*****************old************************/
 
 /**
@@ -90,7 +89,7 @@ ul, ol {
 li {
     > ul,
     > ol {
-         margin-bottom: 0;
+        margin-bottom: 0;
     }
 }
 

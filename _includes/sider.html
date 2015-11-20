@@ -2,18 +2,27 @@
 <header class="sider">
 
     <div class="avatar">
-      <div class="avatar-image"></div>
+        <div class="avatar-image"></div>
     </div>
-    <a class="site-title" href="{{ site.baseurl }}/">
-      {{ site.title }}
-    </a>
 
-      <div class="trigger">
-        {% for my_page in site.pages %}
-          {% if my_page.title %}
-          <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
-          {% endif %}
-        {% endfor %}
-      </div>
+    <div class="sider-box">
+
+        <div class="site-titlediv">
+            <a class="site-title" href="{{ site.baseurl }}/">
+                {{ site.title }}
+            </a>
+        </div>
+        <div class="description"></div>
+
+        <div class="social-link"></div>
+
+        <div class="pages">
+            {% for my_page in site.pages %}
+            {% if my_page.title %}
+            <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
 
 </header>

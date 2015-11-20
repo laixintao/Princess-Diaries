@@ -11,14 +11,14 @@
     width: auto;
 }
 
-$sider_width: 160px;
+$sider_width: 200px;
 .sider {
-    margin-top: 116px;
+    margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
     width: $sider_width;
     padding-left: 450px;
-    z-index: 999;
+    z-index: 888;
     position: fixed;
 }
 
@@ -31,5 +31,18 @@ $sider_width: 160px;
 }
 
 .avatar{
-    float: left;
+    right: 24px;
+    position: absolute;
+    z-index: 999;
+    display: block;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.sider-box{
+    z-index: 888;
+    margin-top: 90px;
+    padding-top: 90px;
 }
