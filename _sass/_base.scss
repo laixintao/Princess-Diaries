@@ -8,7 +8,25 @@ dl, dd, ol, ul, figure {
     padding: 0;
 }
 
+.avatar{
+    display: block;
+    width: 140px;
+    height:140px;
+    border-radius: 50%;
+    border: 1px solid #eee;
+    padding: 5px;
+    background:#fff;
+}
 
+.avatar-image{
+    background-image: url(/images/avatar.jpeg);
+    background-size:cover;
+    background-position:center center;
+    height: 100%;
+    border-radius:50%;
+}
+
+/*****************old************************/
 
 /**
  * Basic styling
