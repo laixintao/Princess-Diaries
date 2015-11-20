@@ -12,10 +12,14 @@
                 {{ site.title }}
             </a>
         </div>
-        <div class="description"></div>
-
-        <div class="social-link"></div>
-
+        <div class="description">
+            {{ site.description }}
+        </div>
+        <div class="social-link">
+            <p>{{ site.url }}</p>
+            <p>{{ site.twitter_username }}</p>
+            <p>{{ site.github_username }}</p>
+        </div>
         <div class="pages">
             {% for my_page in site.pages %}
             {% if my_page.title %}

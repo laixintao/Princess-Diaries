@@ -11,19 +11,21 @@
     width: auto;
 }
 
-$sider_width: 200px;
+$sider_width: 210px;
+$page_content_width: 490px;
+
 .sider {
     margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
     width: $sider_width;
-    padding-left: 450px;
+    padding-left: $page_content_width;
     z-index: 888;
     position: fixed;
 }
 
 .page-content{
-    width: 450px;
+    width: $page_content_width;
     margin-right: auto;
     margin-left: auto;
     padding-right: $sider_width;
@@ -31,7 +33,7 @@ $sider_width: 200px;
 }
 
 .avatar{
-    right: 24px;
+    right: 29px;
     position: absolute;
     z-index: 999;
     display: block;
@@ -44,5 +46,18 @@ $sider_width: 200px;
 .sider-box{
     z-index: 888;
     margin-top: 90px;
-    padding-top: 90px;
+    padding-top: 70px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+}
+
+.page-container{
+    margin-right: 15px;
+    margin-bottom: 30px;
+}
+
+.content{
+    margin-top: 30px;
+    margin-right: 15px;
 }
