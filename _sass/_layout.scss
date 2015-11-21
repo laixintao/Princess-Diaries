@@ -58,4 +58,24 @@ $page_content_width: 490px;
 .content{
     margin-top: 30px;
     margin-right: 15px;
+    overflow: hidden;
+}
+
+.post-meta{
+    padding: 7px 10px;
+    padding-left: $page_content_width - 130px;
+    margin-left: -15px;
+    width: 110%;
+    background: #f6f6f6;
+    border-top: 1px solid #e1e1e1;
+    margin-bottom: -15px;
+    word-wrap: break-word;
+}
+
+.categories{
+    padding: 2px 8px;
+}
+
+.tags{
+    padding: 2px 8px 4px;
 }

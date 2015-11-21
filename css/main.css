@@ -1,19 +1,21 @@
 /*
-Error: Invalid CSS after "@charset "utf-8"": expected "{", was ";"
-        on line 4 of main.scss
+Error: Invalid CSS after "...ial, sans-serif": expected "{", was ";"
+        on line 7 of main.scss
 
-1: ---
 2: # Only the main Sass file needs front matter (the dashes are enough)
 3: ---
-4: @charset "utf-8";
+4: 
 5: 
-6: 
-7: 
-8: // Our variables
-9: $base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+6: // Our variables
+7: $base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+8: $base-font-size:   11px;
+9: $base-font-weight: 400;
+10: $small-font-size:  $base-font-size * 0.875;
+11: $base-line-height: 1.5;
+12: 
 
 Backtrace:
-main.scss:4
+main.scss:7
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:1161:in `expected'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:1097:in `expected'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:1092:in `tok!'
@@ -42,4 +44,4 @@ main.scss:4
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Invalid CSS after \"@charset \"utf-8\"\": expected \"{\", was \";\"\A         on line 4 of main.scss\A \A 1: ---\A 2: # Only the main Sass file needs front matter (the dashes are enough)\A 3: ---\A 4: @charset \"utf-8\";\A 5: \A 6: \A 7: \A 8: // Our variables\A 9: $base-font-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;"; }
+  content: "Error: Invalid CSS after \"...ial, sans-serif\": expected \"{\", was \";\"\A         on line 7 of main.scss\A \A 2: # Only the main Sass file needs front matter (the dashes are enough)\A 3: ---\A 4: \A 5: \A 6: // Our variables\A 7: $base-font-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\A 8: $base-font-size:   11px;\A 9: $base-font-weight: 400;\A 10: $small-font-size:  $base-font-size * 0.875;\A 11: $base-line-height: 1.5;\A 12: "; }

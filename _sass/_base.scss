@@ -1,6 +1,9 @@
 /**
  * Reset some basic elements
  */
+
+$border_radius: 5px;
+
 body, h1, h2, h3, h4, h5, h6,
 p, blockquote, pre, hr,
 dl, dd, ol, ul, figure {
@@ -24,13 +27,22 @@ dl, dd, ol, ul, figure {
 .sider-box{
     border: 1px solid #eee;
     background: #ffffff;
-    border-radius: 3%;
+    border-radius: $border_radius;
+    box-shadow: 0px 0px 2px 0px
+    rgba(178, 178, 178, 0.74);
 }
 
 .content{
-    padding: 10px;
+    padding: 15px;
     background: #ffffff;
+    border-radius: $border_radius;
+    box-shadow: 0px 0px 4px 0px
+        rgba(178, 178, 178, 0.74);
 }
+
+
+
+
 /*****************old************************/
 
 /**
@@ -152,7 +164,7 @@ blockquote {
  */
 pre,
 code {
-    font-size: 15px;
+    font-size: 12px;
     border: 1px solid $grey-color-light;
     border-radius: 3px;
     background-color: #eef;
@@ -213,4 +225,16 @@ pre {
             fill: $grey-color;
         }
     }
+}
+
+.categories{
+    color: #b1b1b1;
+}
+
+.tags{
+    color: #b1b1b1;
+}
+
+.post-meta{
+    color: #b1b1b1;
 }

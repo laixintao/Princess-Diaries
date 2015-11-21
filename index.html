@@ -2,28 +2,46 @@
 layout: default
 ---
 
-  <ul class="post-list">
+<div class="post-list">
     {% for post in site.posts %}
-      <div class="content">
-        <span class="post-meta">
-          {{ post.date | date: "%b %-d, %Y" }}
-        </span>
-
+    <div class="content">
         <h2>
-          <a class="post-link"
-             href="{{ post.url | prepend: site.baseurl }}">
-            {{ post.title }}
-            {{ post.content }}
-          </a>
+            <a class="post-link"
+               href="{{ post.url | prepend: site.baseurl }}">
+                {{ post.title }}
+            </a>
         </h2>
-      </div>
-    {% endfor %}
-  </ul>
 
-  <p class="rss-subscribe">
+        <div class="post-content">
+            {{ post.content }}
+        </div>
+
+        <div class="categories">
+            <i class="icon-folder-open icon-large"></i>
+            {{post.categories}}
+        </div>
+        <div class="tags">
+            {% if post.tags != empty %}
+                <i class="icon-tags icon-large"></i>
+                {% for tag in post.tags%}
+                {{tag}}
+                {%endfor%}
+            {%endif%}
+        </div>
+        <div class="post-meta">
+            <div class="post-meta-data">
+                <i class="icon-pencil icon-large"></i>
+                {{ post.date | date: "%b %-d, %Y" }}
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+<p class="rss-subscribe">
     subscribe
     <a href="{{ "/feed.xml" | prepend: site.baseurl }}">
     via RSS
     </a>
-  </p>
+</p>
 
