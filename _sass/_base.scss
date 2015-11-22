@@ -287,3 +287,31 @@ pre {
 .pages a:hover{
     background: #EFEFEF;
 }
+
+.rss{
+    margin-bottom: 15px;
+    overflow: hidden;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    text-align: left;
+    margin-top: 7px;
+    width: 90%;
+    margin-left: 5%;
+    text-decoration: none;
+}
+
+.rss a{
+    background: #f6f6f6;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #a9a9a9;
+    border-bottom: 1px solid #e5e5e5;
+    padding: 10px 15px;
+    display: block;
+    text-decoration: none;
+}
+
+.rss a:hover{
+    background: #EFEFEF;
+}

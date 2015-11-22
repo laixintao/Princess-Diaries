@@ -17,9 +17,9 @@
         </div>
         <div class="social-link">
             {%if site.url != empty %}
-                <a href="{{site.url}}">
-                    <i class="icon-large icon-globe"></i>
-                </a>
+            <a href="{{site.url}}">
+                <i class="icon-large icon-globe"></i>
+            </a>
             {%endif%}
             {%if site.twitter != empty %}
             <a href="{{site.twitter}}">
@@ -43,6 +43,9 @@
             <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
             {% endif %}
             {% endfor %}
+        </div>
+        <div class="rss">
+                <a href="{{ "/feed.xml" | prepend: site.baseurl }}"><i class="icon-rss icon-large"></i>  RSS</a>
         </div>
     </div>
 

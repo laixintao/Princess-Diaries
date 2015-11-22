@@ -2,6 +2,7 @@
 layout: page
 title: MORE
 permalink: /about/
+date: 2015-11-17 14:39:45 +0800
 ---
 
 This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
