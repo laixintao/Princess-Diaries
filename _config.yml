@@ -18,3 +18,9 @@ twitter: https://twitter.com/SinpeachLai
 
 # Build settings
 markdown: kramdown
+
+paginate: 3
+paginate_path: "page:num"
+
+
+gems: [jekyll-paginate] 

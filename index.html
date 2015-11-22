@@ -3,7 +3,7 @@ layout: default
 ---
 
 <div class="post-list">
-    {% for post in site.posts %}
+    {% for post in paginator.posts %}
     <div class="content">
         <h2>
             <a class="post-link"
@@ -38,3 +38,33 @@ layout: default
     {% endfor %}
 </div>
 
+<div id="pagination">
+    <div class="pagenavi">
+        {% if paginator.previous_page %}
+        {% if paginator.previous_page == 1 %}
+        <a href="/" class="current">
+            <i class="icon-chevron-left"></i>
+        </a>
+        {% else %}
+        <a href="/page{{paginator.previous_page}}">
+            <i class="icon-chevron-left"></i>
+        </a>
+        {% endif %}
+        {% else %}
+        <span> <i class="icon-chevron-left"></i></span>
+        {% endif %}
+        {% for count in (2..paginator.total_pages) limit:8 %}
+        {% if count == paginator.page %}
+        <span class="current-page">{{count}}</span>
+        {% else %}
+        <a href="/page{{count}}">{{count}}</a>
+        {% endif %}
+        {% endfor %}
+
+        {% if paginator.next_page %}
+        <a href="/page{{paginator.next_page}}"><i class="icon-chevron-right"></i></a>
+        {% else %}
+        <span><i class="icon-chevron-right" </span>
+        {% endif %}
+    </div>
+</div>
