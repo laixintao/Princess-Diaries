@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: post
 title:  "公主日记"
 date:   2015-11-17 14:39:45 +0800
 categories: Theme

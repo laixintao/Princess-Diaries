@@ -16,9 +16,26 @@
             {{ site.description }}
         </div>
         <div class="social-link">
-            <p>{{ site.url }}</p>
-            <p>{{ site.twitter_username }}</p>
-            <p>{{ site.github_username }}</p>
+            {%if site.url != empty %}
+                <a href="{{site.url}}">
+                    <i class="icon-large icon-globe"></i>
+                </a>
+            {%endif%}
+            {%if site.twitter != empty %}
+            <a href="{{site.twitter}}">
+                <i class="icon-large icon-twitter"></i>
+            </a>
+            {%endif%}
+            {%if site.facebook != empty %}
+            <a href="{{site.facebook}}">
+                <i class="icon-large icon-facebook"></i>
+            </a>
+            {%endif%}
+            {%if site.github != empty %}
+            <a href="{{site.github}}">
+                <i class="icon-large icon-github"></i>
+            </a>
+            {%endif%}
         </div>
         <div class="pages">
             {% for my_page in site.pages %}

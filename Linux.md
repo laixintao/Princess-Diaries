@@ -1,6 +1,6 @@
 ---
 layout: page
-title: MORE
+title: Linux
 permalink: /about/
 ---
 

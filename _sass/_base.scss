@@ -30,6 +30,8 @@ dl, dd, ol, ul, figure {
     border-radius: $border_radius;
     box-shadow: 0px 0px 2px 0px
     rgba(178, 178, 178, 0.74);
+    word-wrap: break-word;
+    text-align: center;
 }
 
 .content{
@@ -125,7 +127,7 @@ h1, h2, h3, h4, h5, h6 {
 /**
  * Links
  */
-a {
+.content a {
     color: $brand-color;
     text-decoration: none;
 
@@ -148,7 +150,7 @@ blockquote {
     color: $grey-color;
     border-left: 4px solid $grey-color-light;
     padding-left: $spacing-unit / 2;
-    font-size: 18px;
+    font-size: 12px;
     letter-spacing: -1px;
     font-style: italic;
 
@@ -237,4 +239,51 @@ pre {
 
 .post-meta{
     color: #b1b1b1;
+}
+
+.site-title{
+    font-size: 1.8em;
+    font-family: '', sans-serif;
+    font-weight: bold;
+    color: $text-color;
+    text-decoration: none;
+}
+
+.description{
+    font-family: 'Comic Sans MS',sans-serif;
+}
+
+.social-link a{
+    margin: 3px 3px 3px;
+    font-size: 13px;
+    text-decoration: none;
+    color: $grey-color;
+}
+
+.pages{
+    margin-bottom: 15px;
+    overflow: hidden;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    text-align: left;
+    margin-top: 7px;
+    width: 90%;
+    margin-left: 5%;
+    text-decoration: none;
+}
+
+.pages a{
+    background: #f6f6f6;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #a9a9a9;
+    border-bottom: 1px solid #e5e5e5;
+    padding: 10px 15px;
+    display: block;
+    text-decoration: none;
+}
+
+.pages a:hover{
+    background: #EFEFEF;
 }
